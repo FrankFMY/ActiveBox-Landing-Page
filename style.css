@@ -97,7 +97,6 @@ p {
     padding-top: 100px;
 
     background: #31344e url("img/intro-bg.jpg") center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -517,3 +516,102 @@ p {
 .copyright__text span {
     color: #fff;
 }
+
+
+/* Burger */
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+
+    background-color: #fff;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    width: 30px;
+    top: -8px;
+}
+
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
+}
+
+
+/* Media
+===================*/
+
+@media (max-width: 991px) {
+
+    /* Nav */
+    .nav {
+        display: none;
+    }
+
+    /* Burger */
+    .burger {
+        display: block;
+    }
+
+    /* Intro */
+    .intro__title {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* Intro */
+    .intro {
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
